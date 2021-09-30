@@ -28,6 +28,43 @@
                 </div>    
             </div>
         </div>
+        <div class="container-small-h100">
+            <h3 class="titol-third-section">POPULAR RECIPES</h3>
+            <h4 class="details-section-3">Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maxium lacus non nunc lacinia lobortis.</h4>
+            <div class="section-3">
+                <div class="left">
+                    <img class="yogurt-nan" src="../assets/img/Yogurt-Nan.jpg" alt="Yogurt Nan" srcset="">
+                    <div class="text-yougurt">
+                        <h3>Lunch favorurite with Salad, Naan And Beans</h3>
+                        <h5>Bakery, Feature, Healthy, Latest Recipes, Staff Picks</h5>
+                        <h4>Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex. Sed porttitor, diam eget convallis volutpat, arcu tellus facilisis nulla, id dignissim orci leo id.</h4>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="row">
+                        <img src="../assets/img/Mixed-fruits.jpg" alt="Mixed Fruits">
+                        <div class="margin-10"></div>
+                        <img src="../assets/img/r-rachel-park.jpg" alt="Rachel Park">
+                    </div>
+                    <div class="row">
+                        <img src="../assets/img/ice-cream.jpg" alt="Ice Cream">
+                        <div class="margin-10"></div>
+                        <img src="../assets/img/4image.jpg" alt="Drinks">
+                    </div>
+                    <div class="row">
+                        <img src="../assets/img/5image.jpg" alt="Fruits">
+                        <div class="margin-10"></div>
+                        <img src="../assets/img/6image.jpg" alt="Drink Preparation">
+                    </div>
+                    <div class="row">
+                        <img src="../assets/img/7image.jpg" alt="Typical Meal">
+                        <div class="margin-10"></div>
+                        <img src="../assets/img/8image.jpg" alt="Cakes">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
 </template>
@@ -83,7 +120,7 @@ export default {
         }
     }
     //fine banner
-    //inizio foodie journal
+    //inizio seconda sezione
     .container-small{
         height: 400px;
         background-color: $color-cube-1;
@@ -115,9 +152,83 @@ export default {
             h5{
                 margin-top: 10px;
                 color: $mediam-cut-5;
+                margin-bottom: 50px;
             }
         }
     }
+    //fine seconda sezione
+    //inizio terza sezione
+    .titol-third-section{
+        text-align: center;
+        color: $mediam-cut-1;
+    }
+    .details-section-3{
+        padding-top: 30px;
+        width: 50%;
+        margin: 0 auto;
+        color: $mediam-cut-5;
+    }
+    .section-3{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 50px;
+
+        .left{
+            width: 50%;
+            margin-right: 20px;
+
+            .text-yougurt{
+                width: 90%;
+                margin: auto;
+                height: 50%;
+
+                h3{
+                    margin-top: 30px;
+                    color: $mediam-cut-1;
+                }
+
+                h5{
+                    margin: 5px 0 50px 0;
+                    color: $mediam-cut-5;
+                }
+
+                h4{
+                    font-size: 17px;
+                    line-height: 30px;
+                    margin-bottom: 30px;
+                }
+                
+                button{
+                    padding: 15px 15px;
+                    align-items: center;
+                    background-color: #fc7525;  
+                    color: #f0eeeb;
+                    border: none;
+                    border-radius: 2px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .right{
+            width: 50%;
+            margin-left: 20px;
+            justify-content: space-between;
+            .row{
+                width: calc((100%  / 2) - 10px);
+                display: flex;
+                justify-content: space-between;
+                
+                img{
+                    margin-bottom: 10px;
+                }
+                .margin-10{
+                    margin: 10px;
+                }
+            }
+        }
+    }
+    //fine terza sezione
 }
 
 </style>
