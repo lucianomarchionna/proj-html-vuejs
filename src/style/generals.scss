@@ -7,9 +7,13 @@
     box-sizing: border-box;
 }
 
-.container{
+.container-small{
     width: 1170px;
-    height: 100vh;
+    margin: 0 auto;
+}
+
+.container-large{
+    width: 1500px;
     margin: 0 auto;
 }
 

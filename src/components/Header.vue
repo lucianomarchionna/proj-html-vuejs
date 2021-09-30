@@ -1,5 +1,5 @@
 <template>
-  <header class="container">
+  <header class="container-small">
     <div class="header-top">
       <div class="header-top-left">
         <h6>Download App <div class="ios">iOS</div>Advertise with us</h6>
@@ -38,7 +38,7 @@ export default {
 
 <style scoped lang="scss">
 @import "../style/generals";
-.container{
+.container-small{
   width: 100%;
   height: 170px;
   display: flex;
