@@ -52,7 +52,7 @@ export default {
     justify-content: space-around;  
 
     a{        
-      color: $mediam-cut-1;
+      color: $color-cube-4;
       text-decoration: none;
     }
   }
