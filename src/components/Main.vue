@@ -106,6 +106,36 @@
                     </div>
                 </div>
             </div>
+            <div class="section5">
+                <div class="section5-top">
+                    <div class="part-left">
+                        <h3 id="titol">FARM TO TABLE</h3>
+                        <h4 id="subtitol">Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maxium lacus non nunc lacinia lobortis.</h4>
+                    </div>
+                    <div class="part-right">
+                        <button>READ OUR BLOG <i class="fas fa-book-reader"></i></button>
+                    </div>   
+                </div>
+                <div class="section5-bottom">
+                    <div class="section5-left">
+                        <img src="../assets/img/banner.jpg" alt="Avada food">
+                        <div class="text-section5">
+                            <h3>Food Corner: Top Japanese Restaurants for Sushi</h3>
+                            <h5>By admind 1 March 35th, 2019</h5>
+                            <h4>Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex.</h4>
+                            <div class="separation">
+                                <h5>Reade More ></h5>
+                                <i class="far fa-comments"> 0</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section5-right">
+                        <img src="../assets/img/latest-recipes.png" alt="Latest Recipes">
+                        <img class="singapore" src="../assets/img/singapore-featured-image.jpg" alt="Singapore">
+                        <button><i class="fas fa-globe-americas"></i> VIEW ALL CITY GUIDES</button>
+                    </div> 
+                </div>
+            </div>
         </div>
     </div>
     
@@ -242,10 +272,11 @@ export default {
                 }
                 
                 button{
+                    text-align: right;
                     padding: 15px 15px;
                     align-items: center;
-                    background-color: #fc7525;  
-                    color: #f0eeeb;
+                    background-color: $color-cube-5;  
+                    color: $mediam-cut-2;
                     border: none;
                     border-radius: 2px;
                     cursor: pointer;
@@ -299,9 +330,93 @@ export default {
         #recipes-top{
             margin-top: 50px;
         }
-        #recipes-bot{
-            margin-bottom: 50px;
+    }
+    //fine quarta sezione
+    //inizio quinta sezione
+    .section5{
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+
+        .section5-top{
+            height: 150px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            h3{
+               color: $mediam-cut-1; 
+            }
+
+            h4{
+                margin-top: 20px;
+                color: $mediam-cut-5;
+            }
+
+            button{
+                padding: 15px 15px;
+                align-items: center;
+                background-color: $color-cube-5;  
+                color: $mediam-cut-2;
+                border: none;
+                border-radius: 2px;
+                cursor: pointer;
+            }
         }
+        .section5-bottom{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            gap: 50px;
+
+            .section5-left{
+                width: 70%;
+
+                 .text-section5{
+                    padding-top: 50px;
+                    width: 90%;
+                    margin: 0 auto;
+                
+                    h3{
+                        color: $color-cube-2;
+                    }
+
+                    h5,
+                    h4{
+                        color: $mediam-cut-5;
+                        margin-top: 10px;
+                    }
+
+                    h4{
+                        margin: 40px 0 15px 0;
+                    }
+
+                    .separation{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+
+            .section5-right{
+                width: 30%;
+
+                .singapore{
+                    margin-top: 30px;
+                }
+
+                button{
+                    width: 100%;
+                    height: 30px;
+                    align-items: center;
+                    background-color: $color-cube-5;  
+                    color: $mediam-cut-2;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        
     }
 }
 
