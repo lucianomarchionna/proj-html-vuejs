@@ -30,5 +30,35 @@ const headerLinks = [
         active: true,
     },
 ];
+
+const recipesTop = [
+    {
+        url: "../assets/img/drinks-recipes.png",
+    },
+    {
+        url: "../assets/img/soups-recipes.png",
+    },
+    {
+        url: "../assets/img/baking-recipes.png",
+    },
+    {
+        url: "../assets/img/dinner-recipes.png",
+    },
+];
+
+const recipesBottom = [
+    {
+        url: "../assets/img/healthy-recipes.png",
+    },
+    {
+        url: "../assets/img/staff-picks.png",
+    },
+    {
+        url: "../assets/img/premium-recipes.png",
+    },
+    {
+        url: "../assets/img/quick-easy-recipes.png",
+    },
+];
   
-export default { headerLinks }; 
+export default { headerLinks, recipesTop, recipesBottom }; 

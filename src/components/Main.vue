@@ -29,8 +29,8 @@
             </div>
         </div>
         <div class="container-small-h100">
-            <h3 class="titol-third-section">POPULAR RECIPES</h3>
-            <h4 class="details-section-3">Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maxium lacus non nunc lacinia lobortis.</h4>
+            <h3 class="titol-3and4-section">POPULAR RECIPES</h3>
+            <h4 class="details-section-3and4">Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maxium lacus non nunc lacinia lobortis.</h4>
             <div class="section-3">
                 <div class="left">
                     <img class="yogurt-nan" src="../assets/img/Yogurt-Nan.jpg" alt="Yogurt Nan" srcset="">
@@ -61,6 +61,48 @@
                         <img src="../assets/img/7image.jpg" alt="Typical Meal">
                         <div class="margin-10"></div>
                         <img src="../assets/img/8image.jpg" alt="Cakes">
+                    </div>
+                </div>
+            </div>
+            <div class="section-four">
+                <h3 class="titol-3and4-section">CULINARY COLLECTION</h3>
+                <h4 class="details-section-3and4">Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maxium lacus non nunc lacinia lobortis.</h4>
+                <div class="recipes">
+                    <div id="recipes-top">
+                        <div class="recipes-card">
+                            <img src="../assets/img/drinks-recipes.png" alt="Recipe">  
+                            <h4>DRINKS</h4> 
+                        </div>
+                         <div class="recipes-card">
+                            <img src="../assets/img/soups-recipes.png" alt="Recipe">
+                            <h4>SOUPS</h4> 
+                        </div> 
+                        <div class="recipes-card">
+                            <img src="../assets/img/baking-recipes.png" alt="Recipe">
+                            <h4>BAKERY</h4>
+                        </div>                  
+                        <div class="recipes-card">
+                            <img src="../assets/img/dinner-recipes.png" alt="Recipe">
+                            <h4>DINNER</h4>
+                        </div>
+                    </div>
+                    <div id="recipes-bottom">
+                        <div class="recipes-card">
+                            <img src="../assets/img/healthy-recipes.png" alt="Recipe">
+                            <h4>HEALTHY</h4>
+                        </div>
+                        <div class="recipes-card">
+                            <img src="../assets/img/staff-picks.png" alt="Recipe">
+                            <h4>STAFF PICKS</h4>
+                        </div>
+                        <div class="recipes-card">
+                            <img src="../assets/img/premium-recipes.png" alt="Recipe">
+                            <h4>APPETISERS</h4>
+                        </div>
+                        <div class="recipes-card">
+                            <img src="../assets/img/quick-easy-recipes.png" alt="Recipe">
+                            <h4>QUICK & EASY</h4>
+                        </div>  
                     </div>
                 </div>
             </div>
@@ -158,11 +200,11 @@ export default {
     }
     //fine seconda sezione
     //inizio terza sezione
-    .titol-third-section{
+    .titol-3and4-section{
         text-align: center;
         color: $mediam-cut-1;
     }
-    .details-section-3{
+    .details-section-3and4{
         padding-top: 30px;
         width: 50%;
         margin: 0 auto;
@@ -229,6 +271,38 @@ export default {
         }
     }
     //fine terza sezione
+    //inizio quarta sezione
+    .section-four{
+        margin-top: 30px;
+    }
+    .recipes{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        
+        #recipes-top,
+        #recipes-bottom{
+            display: flex;
+            justify-content: space-between;
+
+            .recipes-card{
+                height: 100%;
+                margin-bottom: 50px;
+                text-align: center;
+                h4{
+                    margin-top: 20px;
+                    color: $mediam-cut-1;
+                }
+            }
+        }
+        #recipes-top{
+            margin-top: 50px;
+        }
+        #recipes-bot{
+            margin-bottom: 50px;
+        }
+    }
 }
 
 </style>
