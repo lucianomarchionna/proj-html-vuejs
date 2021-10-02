@@ -131,7 +131,11 @@
                     </div>
                     <div class="section5-right">
                         <img src="../assets/img/latest-recipes.png" alt="Latest Recipes">
-                        <img class="singapore" src="../assets/img/singapore-featured-image.jpg" alt="Singapore">
+                        <div class="singapore">
+                            <div class="text-singapore">
+                                <div>City Guide: Singapore</div>    
+                            </div>                
+                        </div>
                         <button><i class="fas fa-globe-americas"></i> VIEW ALL CITY GUIDES</button>
                     </div> 
                 </div>
@@ -402,9 +406,30 @@ export default {
                 width: 30%;
 
                 .singapore{
+                    width: 100%;
+                    height: 250px;
+                    background-image: url("../assets/img/singapore-featured-image.jpg");
                     margin-top: 30px;
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                    justify-content: flex-start;
+                    
                 }
 
+                .text-singapore{
+                    position: relative;
+                    top: 65%;
+    
+                    div {
+                        left: 0;
+                        justify-content: flex-start;
+                        background-color: $color-cube-2;
+                        color: $mediam-cut-2;
+                        padding: 10px 40px;
+                        font-size: 20px;
+                    }      
+                }
                 button{
                     width: 100%;
                     height: 30px;
@@ -414,6 +439,8 @@ export default {
                     border: none;
                     cursor: pointer;
                 }
+
+                
             }
         }
         
