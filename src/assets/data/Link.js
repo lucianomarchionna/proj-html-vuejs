@@ -60,5 +60,38 @@ const recipesBottom = [
         url: "../assets/img/quick-easy-recipes.png",
     },
 ];
+
+const leftFooter = [
+    {
+        icon: "fab fa-facebook-f",
+    },
+    {
+        icon: "fab fa-instagram",
+    },
+    {
+        icon: "fab fa-twitter",
+    },
+    {
+        icon: "fab fa-youtube",
+    },
+];
+
+const centerleftFooter = [
+    {
+        text: "Recipes",
+    },
+    {
+        text: "Places",
+    },
+    {
+        text: "Blog",
+    },
+    {
+        text: "About",
+    },
+    {
+        text: "Contact",
+    },
+];
   
-export default { headerLinks, recipesTop, recipesBottom }; 
+export default { headerLinks, recipesTop, recipesBottom, leftFooter, centerleftFooter }; 
