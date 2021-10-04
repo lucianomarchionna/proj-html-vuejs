@@ -140,6 +140,133 @@
                     </div> 
                 </div>
             </div>
+            <div class="section6">
+                <div class="section6-left">
+                    <div class="row">
+                        <div class="first-img">
+                            <img src="../assets/img/fi-roundup.jpg" alt="Roundup">
+                            <div class="space-text">
+                                <h3>Roundup: My New Favorurite Recipes For Healthy Living</h3>
+                                <h5>By admin 1 March 25th, 2019</h5>
+                            </div>                           
+                        </div>
+                        <div class="second-img">
+                            <img src="../assets/img/fi-korean-food.jpg" alt="Korean Food">
+                            <div class="space-text">
+                                <h3>Meal Prep: Korean Bibimbap with Kimchi</h3>
+                                <h5>By admin 1 March 25th, 2019</h5>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="first-img">
+                            <img src="../assets/img/fi-toasts.jpg" alt="Toasts">
+                            <div class="space-text">
+                                <h3>Why These Toasts with Tea are My New Favorite</h3>
+                                <h5>By admin 1 March 25th, 2019</h5>
+                            </div>    
+                        </div>
+                        <div class="second-img">
+                            <img src="../assets/img/fi-street-food.jpg" alt="Street Food">
+                            <div class="space-text">
+                                <h3>Exploring Street Food in Bangkok</h3>
+                                <h5>By admin 1 March 25th, 2019</h5>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="first-img">
+                            <img src="../assets/img/fi-organic-breakfast.jpg" alt="Organic Breakfast">
+                            <div class="space-text">
+                                <h3>Organic Choises For Healthier Living</h3>
+                                <h5>By admin 1 March 25th, 2019</h5>
+                            </div>    
+                        </div>
+                        <div class="second-img">
+                            <img src="../assets/img/fi-water-side-rest.jpg" alt="Water Side Rest">
+                            <div class="space-text">
+                                <h3>5 Waterside Restaurants in Istanbul for Special Events</h3>
+                                <h5>By admin 1 March 25th, 2019</h5>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="section6-right">
+                    <div class="search-input">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div id="follow-us">
+                        <h4>Follow Us</h4>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                    <div class="reviews">
+                        <div id="top-reviews">
+                            <h4>Popular</h4> 
+                            <h4>Recent</h4> 
+                        </div>
+                        <div id="bottom-reviews">
+                            <div class="img-information">
+                                <img src="../assets/img/banner.jpg" alt="">
+                                <div class="text-information">
+                                    <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
+                                    <h5>March 25th, 2019</h5>
+                                </div>
+                            </div>
+                            <div class="img-information">
+                                <img src="../assets/img/singapore-featured-image.jpg" alt="">
+                                <div class="text-information">
+                                    <h4>City Guide: Singapore</h4>
+                                    <h5>February 27th, 2019</h5>
+                                </div>
+                            </div>
+                            <div class="img-information">
+                                <img src="../assets/img/information2.jpg" alt="">
+                                <div class="text-information">
+                                    <h4>6 Nutritional Tips to Help Burn Body Fat</h4>
+                                    <h5>February 28th, 2019</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tweets">
+                        <div id="titol-tweets">
+                            <div id="titol-tweets-left">
+                                <h4>Tweets</h4>
+                                <h5>by</h5>
+                                <h5 class="link">@Theme_Fusion</h5>
+                            </div>
+                            <div id="titol-tweets-right">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                        </div>
+                        <div id="description-tweets">
+                            <img id="theme-fusion-img" src="../assets/img/ThemeFusion.png" alt="">
+                            <div id="twith">
+                                <h5 id="theme_fusion_text-1">Theme Fusion</h5>
+                                <h5 id="theme_fusion_text-2">@Theme_Fusion</h5>
+                                <span>Do you need sublime WordPress hosting for your next website? Take advantage of exclusive partner offers that we have secured just for you, % launch your site in seconds with <span class="active"> #avada</span> on Wp Engine hosting & get 30% Off this Black Friday</span>
+                                <p class="active">bit.ly/3kjLLE2 #BlackFriday2020</p>
+                                <img id="img-twith" src="../assets/img/img-twith.jpeg" alt="">
+                                <div id="icon-twitch">
+                                    <div id="before">
+                                        <i class="far fa-heart"></i>
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </div>
+                                    <div id="after">
+                                        <h5>21h</h5>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
         </div>
     </div>
     
@@ -438,12 +565,213 @@ export default {
                     color: $mediam-cut-2;
                     border: none;
                     cursor: pointer;
-                }
+                }   
+            }
+        }   
+    }
+    //fine quinta sezione
+    //inizio sesta sezione
+    .section6{
+        margin-top: 50px;
+        gap: 50px;
+        height: 100%;
+        display: flex; 
 
-                
+        .section6-left{
+            width: 70%;
+            
+            .row{
+                display: flex;
+                justify-content: space-between;
+                gap: 30px;
+
+                .space-text{
+                    padding: 10px 0 40px 0;
+                    width: 70%;
+                    margin: 0 auto;
+                    text-align: center;
+
+                    h3{
+                        color: $mediam-cut-1; 
+                    }
+
+                    h5{
+                        margin-top: 5px;
+                        color: $mediam-cut-5;
+                    }
+                }
             }
         }
-        
+
+        .section6-right{
+            width: 30%;
+            
+            .search-input{
+                position: relative;
+                width: 100%;
+                
+                input{
+                    width: 100%;
+                    padding-left: 25px;
+                    height: 30px;    
+                }
+
+                i{
+                    position: absolute;
+                    color: $mediam-cut-5;
+                    line-height: 30px;
+                    text-align: center;
+                    padding-left: 5px;
+                }
+            }
+
+            #follow-us{
+                margin-top: 60px;
+
+                h4{
+                    color: $color-cube-5;
+                    margin-bottom: 45px;
+                }
+
+                i{
+                    width: calc(100% / 5);
+                    color: $color-cube-4;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .reviews{
+            
+            #top-reviews{
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+            }
+            
+            #bottom-reviews{
+                margin-top: 40px;
+                width: 100%;
+                height: 100%;
+
+                .img-information{
+                    display: flex;
+                    width: 80px;
+                    height: 80px;
+                    margin-bottom: 10px;
+
+                    img{
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        text-align: center;
+                        margin: auto;
+                        object-fit: cover;
+                    }
+
+                    .text-information{
+                    width: 400px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    margin-left: 20px;
+
+                        h4{
+                            width: 200px;
+                            height: 60%;
+                            color: $color-cube-4;
+                        }
+                        h5{
+                            width: 200px;
+                            height: 30%;
+                            color: $mediam-cut-5;
+                        }
+                    }
+                }    
+            }
+        }
+
+        #tweets{
+            width: 100%;
+            height: 100%;
+            margin-top: 50px;
+
+            #titol-tweets{
+                display: flex;
+                justify-content: space-between;
+
+                #titol-tweets-left{
+                    display: flex;
+                    gap: 5px;
+                    h4{
+                    color: $color-cube-4;
+                    }
+                    h5{
+                        color: $mediam-cut-5;
+                    }
+                    .link{
+                        text-decoration: underline;
+                        color: $color-cube-6;
+                        cursor: pointer;
+                    }
+                } 
+
+                #titol-tweets-right{
+                    i{
+                        color: $mediam-cut-5;
+                        cursor: pointer;
+                    }
+                }
+            }
+            #description-tweets{
+                display: flex;
+                margin-top: 20px;
+
+                #theme-fusion-img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+                
+                #twith{
+                    margin-left: 10px;
+
+                    #theme_fusion_text-1{
+                        display: block;
+                        color: $color-cube-2;
+                    }
+
+                    #theme_fusion_text-2{
+                        display: block;
+                        color: $mediam-cut-5;
+                    }
+
+                    .active{
+                        color: $color-cube-6;;
+                    }
+
+                    #img-twith{
+                        margin-top: 20px;
+                        width: 100%;
+                        height: 50%;
+                    }
+
+                    #icon-twitch{
+                        display: flex;
+                        justify-content: space-between;
+                        color: $mediam-cut-5;
+                        
+                        #before{
+                            width: 20%;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
