@@ -280,6 +280,12 @@
                 <h5>Cras porttitor pellentesque sem eu pretium</h5>
             </div>
         </div>
+        <div class="section8">
+            <img src="../assets/img/Yogurt-Nan.jpg" alt="Yogurt">
+            <img src="../assets/img/Mixed-fruits.jpg" alt="Mixed Fruits">
+            <img src="../assets/img/r-rachel-park.jpg" alt="Rachel">
+            <img src="../assets/img/ice-cream.jpg" alt="Ice CReam">
+        </div>
     </div>
     
 </template>
@@ -849,6 +855,11 @@ export default {
     }
     //fine settima sezione
     //inizio ottava sezione
+    .section8{
+        display: flex;
+        width: calc(100% / 4);
+        height: 100%;
+    }
 }
 
 </style>
