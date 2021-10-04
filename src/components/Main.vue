@@ -190,6 +190,7 @@
                             </div>    
                         </div>
                     </div>
+                    <h4>LOAD MORE POSTS</h4>
                 </div>
                 <div class="section6-right">
                     <div class="search-input">
@@ -266,6 +267,17 @@
                         </div>
                     </div>  
                 </div>
+            </div>
+        </div>
+        <div class="banner-bottom">
+            <div class="text">
+                <h2>Subscribe <span>&</span> Receive A Free eBook</h2>
+                <h5>Aliquam erat volutpat. Ut quis ligulaa magna blandit finibus. Suspendisse maximus alcus non nunc lacinia lobortis.</h5>
+                <div class="insert-mail">
+                    <input type="text" placeholder="Insert your email...*">
+                    <button>SUBSCRIBE</button>
+                </div>
+                <h5>Cras porttitor pellentesque sem eu pretium</h5>
             </div>
         </div>
     </div>
@@ -601,6 +613,12 @@ export default {
                     }
                 }
             }
+
+            h4{
+                cursor: pointer;
+                text-align: center;
+                color: $color-cube-2;
+            }
         }
 
         .section6-right{
@@ -745,10 +763,12 @@ export default {
 
                     #theme_fusion_text-2{
                         display: block;
+                        cursor: pointer;
                         color: $mediam-cut-5;
                     }
 
                     .active{
+                        cursor: pointer;
                         color: $color-cube-6;;
                     }
 
@@ -762,7 +782,8 @@ export default {
                         display: flex;
                         justify-content: space-between;
                         color: $mediam-cut-5;
-                        
+                        cursor: pointer;
+
                         #before{
                             width: 20%;
                             display: flex;
@@ -773,6 +794,61 @@ export default {
             }
         }
     }
+    //fine sesta sezione
+    //inizio settima sezione
+    .banner-bottom{
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../assets/img/subscribe-sec-bg.png");
+        height: 550px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+
+        .text{
+            width: 500px;
+            height: 150px;
+            position: absolute;
+            text-align: center;
+
+            h2{
+            color: $color-cube-2;
+            }
+
+            span{
+                color: $color-cube-5;
+            }
+
+            h5{
+                margin-top: 15px;
+                color: $mediam-cut-5;
+            }
+
+            .insert-mail{
+                margin-top: 15px;
+                display: flex;
+                gap: 30px;
+                justify-content: center;
+
+                input{
+                    width: 70%;
+                }
+
+                button{
+                padding: 15px 35px;
+                align-items: center;
+                background-color: $color-cube-5;  
+                color: $mediam-cut-2;
+                border: none;
+                cursor: pointer;
+            }
+            }
+        }    
+    }
+    //fine settima sezione
+    //inizio ottava sezione
 }
 
 </style>
